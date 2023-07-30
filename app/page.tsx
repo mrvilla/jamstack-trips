@@ -40,7 +40,6 @@ export default async function Home() {
                             height={422}
                             priority
                         />
-                        <div>{project.content}</div>
                     </div>)}
             </div>
      </main>
