@@ -1,13 +1,14 @@
 import {createClient} from "@sanity/client";
 
-export const config = {
-    projectId: "2vwp5q2q",
-    dataset: "jamstack-trips",
-    apiVersion: 1,
-}
+
+const projectId = "2vwp5q2q";
+const dataset = "jamstack-trips";
+const apiVersion = "2023-01-01";
 
 export const client = createClient({
-    ...config,
+    projectId,
+    dataset,
+    apiVersion,
     useCdn: true
 })
 
